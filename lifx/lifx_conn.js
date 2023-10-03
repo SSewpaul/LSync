@@ -1,15 +1,11 @@
 const LifxClient = require('lifx-lan-client').Client;
+const axios = require('axios');
 
-let client = new LifxClient();
-
-const sleep = (waitTimeInMs) => new Promise(resolve => setTimeout(resolve, waitTimeInMs));
+let client = new LifxClient();;
 
 //add new lights to array
 client.on('light-new', light => {
     console.log('Found light: ' + light.id);
-    light_on();
-    
-    light_off();
 });
 
 //turn on lights
@@ -35,6 +31,7 @@ let light_off = (delay = 0) =>{
         });
     });
 }
+
 
 // process.stdin.setEncoding('utf8');
 

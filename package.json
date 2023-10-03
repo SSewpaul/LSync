@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "lifx-lan-client": "^2.1.0"
+    "axios": "^1.5.0",
+    "dotenv": "^16.3.1",
+    "express.js": "^1.0.0",
+    "lifx-lan-client": "^2.1.0",
+    "spotify-web-api-node": "^5.0.2"
   }
 }
